@@ -1,9 +1,12 @@
 Rails.application.routes.draw do
+  get 'api_v1_movies/index'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   namespace :api do
     namespace :v1 do
+      get 'movies/index'
       post '/login', to: 'sessions#create'
       get 'session', to: 'sessions#show'
+      get 'movies', to: 'movies#index'
     end
   end
 
