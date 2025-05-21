@@ -28,6 +28,7 @@ CinéAPI is an advanced educational application developed with Ruby on Rails. It
   - rack-attack is configured to limit requests to 5 every 2 seconds per IP.
 
   - rack-attack is also set up to block specific IP addresses.
+- **Authorization:** [Pundit](https://github.com/varvet/pundit) is used for authorization policies on the User and Movie models, ensuring fine-grained access control at the model and API level.
 
 ## 🧪 Testing
 
@@ -35,6 +36,8 @@ CinéAPI is an advanced educational application developed with Ruby on Rails. It
 - The project uses [RSpec](https://rspec.info/) for unit and integration testing.
 - Model tests and API endpoint tests are implemented.
 - Request specs are used to simulate real HTTP requests to the API.
+- **Pundit policies are tested** for both User and Movie models to ensure correct authorization logic.
+
 
 ### Factories
 - [FactoryBot](https://github.com/thoughtbot/factory_bot_rails) is used to generate test data for models (users, movies).
@@ -67,6 +70,7 @@ CinéAPI est une application pédagogique avancée développée avec Ruby on Rai
 - **Limitation des requêtes :**
   - `rack-attack` limite à 5 requêtes toutes les 2 secondes par IP.
   - Blocage possible de certaines adresses IP.
+- **Autorisation :** [Pundit](https://github.com/varvet/pundit) est utilisé pour la gestion des droits d’accès sur les modèles User et Movie, assurant un contrôle précis des accès côté modèle et API.
 
 ## 🧪 Tests
 
@@ -74,6 +78,7 @@ CinéAPI est une application pédagogique avancée développée avec Ruby on Rai
 - Le projet utilise [RSpec](https://rspec.info/) pour les tests unitaires et d’intégration.
 - Des tests de modèles et des tests d’API sont implémentés.
 - Les request specs simulent de vraies requêtes HTTP vers l’API.
+- **Les policies Pundit sont testées** pour les modèles User et Movie afin de garantir la logique d’autorisation.
 
 ### Factories
 - [FactoryBot](https://github.com/thoughtbot/factory_bot_rails) est utilisé pour générer des données de test pour les modèles (utilisateurs, films, acteurs, réalisateurs, rôles).
