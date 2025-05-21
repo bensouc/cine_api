@@ -17,6 +17,7 @@ gem "bcrypt", "~> 3.1.7"
 gem 'jwt'               # Pour gérer les JSON Web Tokens
 gem 'faker'
 gem 'ostruct'
+gem 'pundit'            # Pour gérer les autorisations d'accès
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 # In your Gemfile

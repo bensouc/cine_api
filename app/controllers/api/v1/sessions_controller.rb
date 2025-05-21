@@ -11,6 +11,7 @@ class Api::V1::SessionsController < ApplicationController
   end
 
   def show
+    authorize @current_user
     render json: { user_email: @current_user.email }, status: :ok
   end
 end

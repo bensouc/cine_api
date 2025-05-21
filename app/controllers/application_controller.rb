@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::API
   before_action :authenticate_request #toutes les actions sont bloq
-
+  include Pundit::Authorization
   attr_reader :current_user
 
   private
