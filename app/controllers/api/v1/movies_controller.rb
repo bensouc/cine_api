@@ -1,10 +1,11 @@
 class Api::V1::MoviesController < ApplicationController
   def index
-    @movies = Movie.limit(580).includes(:director, :actors)
+    @movies = policy_scope(Movie)
   end
 
   def create
     @movie = Movie.new(movie_params)
+    authorize @movie
     if @movie.save
       render json: @movie, status: :created
     else
