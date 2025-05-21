@@ -1,24 +1,23 @@
-# README
+# 🎬 CinéAPI
+CinéAPI is an advanced educational application developed with Ruby on Rails. It facilitates the exploration of relationships between movies, actors, and directors, while integrating modern features such as JWT authentication, route protection via middleware, and efficient JSON responses with Jbuilder.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 🚀 Features
+- Management of movies, actors, and directors.
 
-Things you may want to cover:
+- Secure authentication using both session-based and JWT tokens.
 
-* Ruby version
 
-* System dependencies
+- Request rate limiting per IP using ``rack-attack``.
 
-* Configuration
+- Efficient JSON response generation with Jbuilder.
 
-* Database creation
+- Database seeded with 580 movies to enrich the dataset.
 
-* Database initialization
+## 🔐 Security
+- **Authentication:** Implemented via both session-based and JWT methods, with middleware to secure routes..
 
-* How to run the test suite
+- **Request Limiting**:
 
-* Services (job queues, cache servers, search engines, etc.)
+  - rack-attack is configured to limit requests to 5 every 2 seconds per IP.
 
-* Deployment instructions
-
-* ...
+  - rack-attack is also set up to block specific IP addresses.
