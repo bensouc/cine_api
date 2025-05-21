@@ -16,9 +16,12 @@ gem "bcrypt", "~> 3.1.7"
 
 gem 'jwt'               # Pour gérer les JSON Web Tokens
 gem 'faker'
+gem 'ostruct'
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
+# In your Gemfile
 
+gem 'rack-attack'
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
 
