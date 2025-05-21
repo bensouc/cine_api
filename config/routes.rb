@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   namespace :api do
     namespace :v1 do
-      get 'movies/index'
+      resources :movies, only: [:index, :create]
       post '/login', to: 'sessions#create'
       get 'session', to: 'sessions#show'
       get 'movies', to: 'movies#index'
